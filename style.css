@@ -1,0 +1,325 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 20px; 
+    background-image: url('https://genexinnovations.com/wp-content/uploads/2023/07/bg-slide.png');
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating */
+    height: 100vh; /* Sets height to full viewport */
+  }
+  /* Google Fonts */
+/* Cursor */
+.cursor {
+    position: relative;
+    margin: 0 auto;
+    font-size: 100px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+}
+
+/* Typewriter Animation */
+.typewriter-animation {
+    animation: typing 8s steps(10, end) infinite, blink 1s step-end infinite;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 100%; /* Fully typed */
+    }
+    50% {
+        width: 100%; /* Hold word */
+    }
+    75% {
+        width: 0%; /* Reset for next word */
+    }
+    100% {
+        width: 0%; /* Finish reset */
+    }
+}
+
+/* Blinking Cursor */
+@keyframes blink {
+    0% {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    50% {
+        border-right-color: transparent;
+    }
+    100% {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+/* Word Switching */
+.cursor:before {
+    content: "innovation"; /* Default word */
+    animation: wordSwitch 8s infinite; /* Switch words every 4 seconds */
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+@keyframes wordSwitch {
+    0%,
+    50% {
+        content: " To innovation";
+    }
+    51%,
+    100% {
+        content: "To genx";
+    }
+}
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .navbar .logo h1 {
+    color: #00d4ff;
+  }
+  
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+  }
+  .hero-content {
+    margin-top: 120px;
+    margin-right: 700px;
+    font-size: 40px;
+  }
+  .hero-content h1 span {
+    color: #00d4ff;
+  }
+  
+  .hero-content .hero-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 50px 20px;
+  }
+  
+  .about-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+  }
+  .about-text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .about-text p{
+    font-size: 25px;
+  }
+  .about-info{
+    margin-top: auto;
+  }
+  .about-image{
+    padding: 20px;
+    border-width: 1px solid grey;
+  }
+  .stats-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .stat h3 {
+    color: #ffffff;
+    font-size: 60px;
+    text-align: center;
+  }
+  .stat p{
+    font-size: 30px;
+  }
+  /* Services Section */
+  .services-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .service-box {
+    background-color: #111;
+    padding: 100px;
+    border-radius: 8px;
+    text-align: left;
+    border: 1px solid white;
+    /* line-height: 2; */
+    font-size: 50px;
+    margin-top: 20px;
+    
+  }
+  .service-box h3{
+    font-size: 40px;
+    line-height: 1;
+  }
+  .service-box p{
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  /* Latest News Section */
+  .news-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .news-section h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-card {
+    background: #191919;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .news-content {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .news-content span {
+    font-size: 20px;
+    color: #00d4ff;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .news-content h3 {
+    font-size:28px;
+    color: #fff;
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    background-color: #111;
+    padding: 50px 20px;
+    color: #fff;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .footer-column p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 5px 0;
+  }
+  
+  .footer-column a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 1.5;
+  }
+  
+  .footer-socials a img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .newsletter {
+    display: flex;
+    margin-top: 15px;
+  }
+  
+  .newsletter input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00d4ff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #008dbf;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .footer-bottom span {
+    color: #00d4ff;
+  }
