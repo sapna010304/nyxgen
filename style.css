@@ -323,3 +323,8 @@
   .footer-bottom span {
     color: #00d4ff;
   }
+@media screen and (max-width: 800px) {
+  .typewriter,.image, .main{
+    width: 100%; 
+  }
+}
